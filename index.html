@@ -4,219 +4,380 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>김한나 포트폴리오</title>
+    <title>빌리프</title>
+    <!-- css -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/aos.css">
-    <script src="script/jquery-3.3.1.min.js"></script>
-    <script src="script/aos.js"></script>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.min.css">
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Syntax Highlighter -->
+    <script type="text/javascript" src="/script/shCore.js"></script>
+    <script type="text/javascript" src="/script/shBrushXml.js"></script>
+    <script type="text/javascript" src="/script/shBrushJScript.js"></script>
+    <!-- plugin -->
+    <script type="text/javascript" src="/script/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="script/slick.min.js"></script>
+    <script type="text/javascript" src="/script/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="/script/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="/script/swiper.min.js"></script>
+    
+    <!-- js -->
+    <script type="text/javascript" src="/script/menu_toggle.js"></script>
+    <script type="text/javascript" src="/script/best_product.js"></script>
+    <script type="text/javascript" src="/script/new_product.js"></script>
+
 </head>
 <body>
-    <input type="checkbox" id="toggle">
-    <header id="header">
-        <label for="toggle" class="toggle">
-            <span class="first"></span>
-            <span class="second"></span>
-            <span class="third"></span>
-        </label>
+    <input type="checkbox" id="toggle_menu"/>
+   
+    <section id="main_wrap">
 
-        <div class="main_menu">
-            <h1 id="main_logo"><a href="index.html">Kim Hanna</a></h1>
+        <!-- 헤더 -->
+        <header class="main_header">
+            <nav class="top_nav">
+                <h2 class="blind">상단메뉴</h2>
+                <ul class="login">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">장바구니</a></li>
+                    <li><a href="#">Global</a></li>
+                </ul>
+            </nav>
+
+            <!-- 검색 토글 -->
+		    <label for="toggle_search" class="search">검색토글</label>
+		    <input id="toggle_search" type="checkbox">
+
+		    <!-- 검색 영역 -->
+		    <div id="search_wrap">
+			    <form>
+			    	<fieldset>
+			    		<legend>검색</legend>
+			    		<input type="text" class="search_text" placeholder="Search" />
+			    		<input type="image" src="/images/btn_search.png" class="search_btn" />
+		    		</fieldset>
+		    	</form>
+	    	</div>
+
+            <!-- 메인로고 -->
+            <h1 class="main_logo"><a href="#"><img src="images/main_logo.png" alt="상단로고"></a></h1>
+            
+            <!--토글메뉴 라벨-->
+		    <label for="toggle_menu" class="menu">메뉴토글</label>
+           
+           
+            <!-- 네비게이션 -->
+            <nav class="nav">
+            
+            <!-- 모바일용 -->
+                <h2 class="blind">메인메뉴</h2>
+                <div id="login_m">
+                    <ul>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">장바구니</a></li>
+                        <li><a href="#">Global</a></li>
+                    </ul>
+                </div>
+
+                <div class="main_menu">
+                    <ul>
+                        <!-- pc -->
+                        <li><a href="#none">I am belif</a>
+                        <!-- mobile -->
+                            <h3>I am belif</h3>
+                            <ul>
+                                <li><a href="#none">story</a></li>
+                                <li><a href="#none">News & Notice</a></li>
+                                <li><a href="#none">PR Center</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#none">Products</a>
+                        <h3>Products</h3>
+                            <ul>
+                                <li><a href="#none">New</a></li>
+                                <li><a href="#none">Best</a></li>
+                                <li><a href="#none">Face</a></li>
+                                <li><a href="#none">Whitening</a></li>
+                                <li><a href="#none">Body</a></li>
+                                <li><a href="#none">Cushion & B.B, Sun</a></li>
+                                <li><a href="#none">Baby</a></li>
+                                <li><a href="#none">Super drops</a></li>
+                                <li><a href="#none">Ritual Tincture</a></li>
+                                <li><a href="#none">Manology</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#none">Wonderland</a>
+                            <h3>Wonderland</h3>
+                            <ul>
+                                <li><a href="#none">belif O.S.T</a></li>
+                                <li><a href="#none">belif Movie</a></li>
+                                <li><a href="#none">belif Artwork</a></li>
+                                <li><a href="#none">belif Mini game</a></li>
+                                <li><a href="#none">belif Bomb Cream Car</a></li>
+                                <li><a href="#none">belif List</a></li>
+                                <li><a href="#none">Talk Film</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#none">Event</a>
+                            <h3>Event</h3>
+                        </li>
+                        <li><a href="#none">Store</a>
+                            <h3>Store</h3>
+                        </li>
+                    </ul>
+                </div>
+                <label for="toggle_menu" class="btn_close">메뉴닫기</label>
+            </nav>
+        </header>
+
+        <!-- 슬라이드 -->
+        <section id="main_slide">
             <ul>
-                <li class="m_home"><a href="#">Home</a></li>
-                <li class="m_about"><a href="#">About me</a></li>
-                <li class="m_portfolio"><a href="#">Portfolio</a></li>
-                <li class="m_contact"><a href="#">Contact</a></li>
+                <li><img class="pc" src="/images/slide01.png" alt="슬라이드이미지">
+                    <img class="tablet" src="/images/slide01_t.jpg" alt="슬라이드이미지">
+                    <img class="mobile" src="/images/slide01_m.jpg" alt="슬라이드이미지">
+                </li>
+                <li><img class="pc" src="/images/slide02.png" alt="슬라이드이미지">
+                    <img class="tablet" src="/images/slide02_t.jpg" alt="슬라이드이미지">
+                    <img class="mobile" src="/images/slide02_m.jpg" alt="슬라이드이미지">
+                </li>
+                <li><img class="pc" src="/images/slide03.png" alt="슬라이드이미지">
+                    <img class="tablet" src="/images/slide03_t.jpg" alt="슬라이드이미지">
+                    <img class="mobile" src="/images/slide03_m.jpg" alt="슬라이드이미지">
+                </li>
+                <li><img class="pc" src="/images/slide04.jpg" alt="슬라이드이미지">
+                    <img class="tablet" src="/images/slide04_t.jpg" alt="슬라이드이미지">
+                    <img class="mobile" src="/images/slide04_m.jpg" alt="슬라이드이미지">
+                </li>
             </ul>
-
-            <script>
-                $(function(){
-                    $("#header ul li a").click(function(){
-                        $("#header label.toggle").click();
-                    });
-                });
-            </script>
-
-            <p>
-                <span>010-4088-1825</span>
-                <span>imme1123@naver.com</span>
-            </p>
         </div>
-    </header>
+
+        <!-- 베스트 제품 -->
+        <section id="best_products">
+            <h3>
+                <strong>Best Products</strong>
+                <span>belif의 사랑받는 제품들을 만나보세요.</span>
+            </h3>
+
+            <div class="best_product">
+                <div class="best">
+            <ul>
+                <li><a href="#">
+                    <img src="images/best_products01.jpg" alt="">
+                    <h3>더 트루 크림-모이스춰라이징 밤</h3>
+                    <div class="bp_btn">제품 정보 보러가기</div>
+                    </a>
+                </li>
+
+                <li><a href="#">
+                    <img src="images/best_products02.jpg" alt="">
+                    <h3>더 트루 크림-아쿠아 밤</h3>
+                    <div class="bp_btn">제품 정보 보러가기</div>
+                    </a>
+                </li>
+
+                <li><a href="#">
+                    <img src="images/best_products03.jpg" alt="">
+                    <h3>클래식 에센스 인크리멘트</h3>
+                    <div class="bp_btn">제품 정보 보러가기</div>
+                    </a>
+                </li>
+
+                <li><a href="#">
+                    <img src="images/best_products04.jpg" alt="">
+                    <h3>헝가리언 워터 에센스</h3>
+                    <div class="bp_btn">제품 정보 보러가기</div>
+                    </a>
+                </li>
+
+                <li><a href="#">
+                    <img src="images/best_products05.jpg" alt="">
+                    <h3>유쓰 크리에이터-에이지 넉다운 밤</h3>
+                    <div class="bp_btn">제품 정보 보러가기</div>
+                    </a>
+                </li>
+
+                <li><a href="#">
+                    <img src="images/best_products06.jpg" alt="">
+                    <h3>뉴메로 10 에센스</h3>
+                    <div class="bp_btn">제품 정보 보러가기</div>
+                    </a>
+                </li>
+
+                <li><a href="#">
+                    <img src="images/best_products07.jpg" alt="">
+                    <h3>모이스춰 밤 쿠션</h3>
+                    <div class="bp_btn">제품 정보 보러가기</div>
+                    </a>
+                </li>
+
+                <li><a href="#">
+                    <img src="images/best_products08.jpg" alt="">
+                    <h3>클래식 크림 얼티미트</h3>
+                    <div class="bp_btn">제품 정보 보러가기</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <button class="btn_next"></button>
+        <button class="btn_prev"></button>
+        </div>
+        </div>
+
+        <!-- 신제품 -->
+        <section id="new_products">
+            <h3>
+                <strong>New Products</strong>
+                <span>belif의 신제품을 확인해보세요.</span>
+            </h3>
+			<div id="gallery_wrap">
+				<ul class="slide_gallery">
+					<li>
+						<img src="images/newproduct01.jpg" alt="유쓰크리에이터에이지넉다운밤" />
+						<div class="new_text">
+							<h3>Youth Creator-Age Knockdown Bomb</h3>
+							<p>촘촘한 모공 탄력을 지켜주는 에이지 넉다운 밤과<br>
+                                빌리프의 든든한 안티에이징 듀오,<br>
+                                에이지 넉다운 워터 에센스 & V 크림이 만나<br>
+                                최강의 안티에이징 패키지 탄생! 🤸<br>
+                                </p>
+							<em>#유쓰_크리에이터_에이지_넉다운_밤_스페셜_세트</em>
+							<a href="#" class="view_more">자세히 보기</a>
+						</div>
+					</li>
+					<li>
+						<img src="images/newproduct02.jpg" alt="시카밤쿠션" />
+						<div class="new_text">
+							<h3>Cica Bomb Cushion</h3>
+							<p>민감한 피부의 메이크업 스트레스를 잠재울<br>
+                                시원 촉촉 시카 수분 쿠션 탄생!🌿</p>
+							<em>#시카밤 #시카쿠션 #빌리프시카밤쿠션 #빌리프쿠션</em>
+							<a href="#" class="view_more">자세히 보기</a>
+						</div>
+					</li>
+					<li>
+						<img src="images/newproduct03.jpg" alt="아쿠아밤비타워터크림" />
+						<div class="new_text">
+							<h3>Aqua Bomb Vita Water Cream</h3>
+							<p>비타민과 히알루론산을 듬뿍 머금은<br>
+                                비타민 수분 폭탄 크림 탄생🍊</p>
+							<em>#아쿠아_밤_비타_워터_크림</em>
+							<a href="#" class="view_more">자세히 보기</a>
+						</div>
+					</li>
+					<li>
+						<img src="images/newproduct04.jpg" alt="스트레스슈터시카밤크림" />
+						<div class="new_text">
+							<h3>Stress Shooter Cica Bomb Cream</h3>
+							<p>지친 여름 피부를 위한 스킨 케어,<br>
+                                빌리프 시카 밤 크림 듀오로 완성하세요</p>
+							<em>#스트레스슈터_시카_밤_크림
+                                #스트레스슈터_시카_밤_크림_리페어</em>
+							<a href="#" class="view_more">자세히 보기</a>
+						</div>
+					</li>
+
+                    <li>
+						<img src="images/newproduct05.jpg" alt="아쿠아밤슬리핑마스크" />
+						<div class="new_text">
+							<h3>Aqua Bomb Sleeping Mask</h3>
+							<p>밤새 촉촉한 수분 보호막💧<br>
+                                수분 폭탄 슬리핑 마스크<br>
+                                Moisture pop 디자인 에디션 출시!</p>
+							<em>#아쿠아_밤_슬리핑_마스크</em>
+							<a href="#" class="view_more">자세히 보기</a>
+						</div>
+					</li>
+				</ul>
+				<ul class="slider-pager">
+					<li><a href="#" data-slide-index="0">
+							<img src="images/newproduct01.jpg" alt="유쓰크리에이터에이지넉다운밤"/></a>
+					</li>
+					<li><a href="#" data-slide-index="1">
+							<img src="images/newproduct02.jpg" alt="시카밤쿠션"/></a>
+					</li>
+					<li><a href="#" data-slide-index="2">
+							<img src="images/newproduct03.jpg" alt="아쿠아밤비타워터크림"/></a>
+					</li>
+					<li><a href="#" data-slide-index="3">
+							<img src="images/newproduct04.jpg" alt="스트레스슈터시카밤크림"/></a>
+					</li>
+                    <li><a href="#" data-slide-index="4">
+                        <img src="images/newproduct05.jpg" alt="아쿠아밤슬리핑마스크"/></a>
+                </li>
+				</ul>
+			</div>            
+        </section>
+        
+		<!--필요한 제품 찾기-->
+		<section id="con_find">
+			<div id="bg_find">
+				<div class="find_text">
+					<h2>Recommend a perfect product for your skin</h2>
+					<p>피부 타입을 체크하시면 피부에 맞는 제품을 추천 해드립니다.</p>
+					<a class="find_view" href="#">자세히보기</a>
+				</div>
+			</div>
+		</section>
+            
+        </div>
+        
+        <!-- 페이스북 -->
+        <section id="con_sns">
+            <h3>
+                <strong>@belif.cosmetic</strong>
+                <span>belif의 페이스북을 확인해보세요!</span>
+            </h3>
+
+            <ul class="sns_imgs">
+				<li class="sns1">
+					<img src="images/fb01.jpg" alt="sns이미지1"/>
+				</li>
+				<li class="sns2">
+					<img src="images/fb02.jpg" alt="sns이미지2"/>
+				</li>
+				<li class="sns3">
+					<img src="images/fb03.jpg" alt="sns이미지3"/>
+				</li>
+				<li class="sns4">
+					<img src="images/fb04.jpg" alt="sns이미지4"/>
+				</li>
+				<li class="sns5">
+					<img src="images/fb05.jpg" alt="sns이미지5"/>
+				</li>
+				<li class="sns6">
+					<img src="images/fb06.jpg" alt="sns이미지6"/>
+				</li>
+			</ul>
+        </section>
+
+        <!-- 푸터 -->
+        <footer id="footer">
+            <ul>
+               <li><a href="#none">Contact us</a></li>
+               <li><a href="#none">이용약관</a></li>
+               <li><a href="#none">개인정보처리방침</a></li>
+               <li><a href="#none">고객 상담실 : 080-023-7007</a></li>
+            </ul>
+            
+<address>Copyright @ LG Household & Health Care LTD. All right reserved </address>
+        </footer>
+    </section>
+
 
     <script>
-        // 메뉴 클릭 시 스크롤 이동
-        $(function(){
-            $("#header ul li").click(function(){
-                var index = $(this).index();
-            $("html, body").animate({
-                scrollTop : $("#contents_wrap > section").eq(index).offset().top
-            },400);
-            });    
-            $(".scrolldown").click(function(){
-			$("html, body").animate({
-				scrollTop: $("#about").offset().top
-			}, 400);
-		});        
+        // 메인 슬라이드 플러그인
+        $(document).ready(function(){
+            $('#main_slide > ul').slick({
+                autoplay: true,
+                autoplaySpeed: 3000,
+            });
         });
     </script>
-
-    <div id="contents_wrap">
-        <!-- home -->
-        <section id="home">
-            <div class="home_inner">
-                <div class="title">
-                    <h2><div data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="3000">안녕하세요!</div> <span>이 사이트는 김한나의 포트폴리오 입니다.</span></h2>
-                </div>
-
-                <div class="line"></div>
-
-                <div class="small_txt">
-                    <div class="uiux" data-aos="fade-bottom" data-aos-duration="3000">
-                        WEB PUBLISHER & UI/UX DESIGNER KIM HANNA'S PORTFOLIO.</div>
-                        <div data-aos="fade-up" data-aos-duration="3000">
-                            <a href="#portfolio">VIEW PORTFOLIO</a>
-                        </div>
-                </div>
-            </div>
-        </section>
-        <script>
-            // 메인 비주얼 이미지 ㅇ높이 윈도우 높이에 맞게
-             function funLoad(){
-                 var Cheight = $(window).height();
-                 $("#home").css({"height":Cheight+"px"});
-             }
-             window.onload = funLoad;
-             window.onresize = funLoad;
-        </script>
-
-        <!-- about me -->
-        <section id="about">
-            <div class="about_inner">
-                <h1>ABOUT ME</h1>
-                <p>소통하고 발전하는 신입 웹 퍼블리셔 & 디자이너 김한나 입니다.</p>
-                <div>
-                    <div class="photo">
-                        <img src="#" alt="김한나 증명사진">
-                        <div>
-                            <p>김한나 (Kim Hanna)</p>
-                            <em>Designer & Publisher</em>
-                        </div>
-                    </div>
-
-                    <div class="about_con">
-                        <p>
-                            <b>Birth</b>
-                            <span>1995. 11. 23</span>
-                        </p>
-                        <p>
-                            <b>Location</b>
-                            <span>울산광역시 동구 전하동</span>
-                        </p>
-                        <p>
-                            <b>Moblie</b>
-                            <span>010-4088-1825</span>
-                        </p>
-                        <p class="edu">
-                            <b>Education</b>
-                            <span>2014.03~2017.02 울산과학대학교 유통경영과<br>
-                            2020.05~2020.10 그린컴퓨터학원 빅데이터 UI 전문가 양성과정<br>
-                            2020.12~2021.02 더조은컴퓨터아트학원 웹디자인/퍼블리셔 양성과정</span>
-                        </p>
-                        <p>
-                            <b>Skill/Tool</b>
-                            <span>HTML5, CSS3, JavaScript, JQuery, PhotoShop, Illustrator, Adobe XD, JSP, Spring</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- portfolio -->
-        <section id="portfolio">
-            <div class="pofol_inner">
-                <h1>PORTFOLIO</h1>
-                <ul>
-                    <li>
-                        <div data-aos="fade-up" data-aos-duration="1000">
-                            <a href="https://annaheno.github.io/belif/" target="_blank">
-                                <div>
-                                    <img src="/images/belif.jpg" alt="빌리프">
-                                </div>
-                        <div class="pofol_txt">
-                            <p>Belif</p>
-                            <span>반응형 웹</span>
-                        </div>
-                    </a>
-                </div>
-                    </li>
-
-                    <li>
-                        <div data-aos="fade-up" data-aos-duration="1000">
-                            <a href="https://annaheno.github.io/baskinrobbins/" target="_blank">
-                                <div>
-                                    <img src="/images/baskinrobbins.jpg" alt="배스킨라빈스">
-                                </div>
-                        <div class="pofol_txt">
-                            <p>배스킨라빈스</p>
-                            <span>웹</span>
-                        </div>
-                    </a>
-                </div>
-                    </li>
-
-                    <li>
-                        <div data-aos="fade-up" data-aos-duration="1000">
-                            <a href="https://annaheno.github.io/jejuwater/main.html" target="_blank">
-                                <div>
-                                    <img src="/images/jejuwater.jpg" alt="">
-                                </div>
-                        <div class="pofol_txt">
-                            <p>제주용암수</p>
-                            <span>웹, 모바일</span>
-                        </div>
-                    </a>
-                </div>
-                    </li>
-
-                    <li>
-                        <div data-aos="fade-up" data-aos-duration="1000">
-                            <a href="#" target="_blank">
-                                <div>
-                                    <img src="images/edm.jpg" alt="">
-                                </div>
-                        <div class="pofol_txt">
-                            <p>EDM</p>
-                            <span>준비중 입니다.</span>
-                        </div>
-                    </a>
-                </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- contact -->
-        <section id="contact">
-            <div class="contact_inner">
-                <h1>CONTACT ME</h1>
-                <p>저의 포트폴리오를 끝까지 봐주셔서 감사합니다. <br/> 메세지를 보내주시면 빠른 시일 내 회신하겠습니다.</p>
-                <form method="POST" action="">
-                    <input type="text" name="name" placeholder="이름 또는 회사명">
-                    <input type="email" name="email" placeholder="이메일 주소">
-                    <textarea name="message" placeholder="메세지 내용"></textarea>
-                    <button type="submit">전송하기</button>
-                </form>
-            </div>
-        </section>
-
-        <footer>
-            <p>Copyright ⓒ Kim Hanna. All rights reserved.</p>
-        </footer>
-    </div>
-
-    <script>
-        AOS.init();
-    </script>
-    
 </body>
 </html>
