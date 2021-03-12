@@ -120,6 +120,7 @@ body{width: 100%; background: linear-gradient(137deg, #F8E0E6, #ECE0F8, #E0F2F7,
 	.about_inner > p {margin-top: 20px; text-align: center; font-size: 17px;}
 	.about_inner > div {position: relative; margin-top: 80px;}
 	.photo {display: inline-block; background: #fff;}
+	.photo > img {width: 200px;}
 	.photo > div {background: #fff; padding: 10px; padding-left: 20px;}
 	.photo > div > p {font-weight: 500;}
 	.about_con {position: absolute; display: inline-block; margin-left: 50px; top: 0; letter-spacing: 1px; font-size: 17px;}
