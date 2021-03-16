@@ -158,13 +158,13 @@ body{width: 100%; background: linear-gradient(137deg, #F8E0E6, #ECE0F8, #E0F2F7,
 }
 /* portfolio */
 @media screen and (min-width: 1501px){
-	#portfolio{width: 100%; padding-top: 70px; padding-bottom: 200px;}
-	.pofol_inner{position: relative; width: 1100px; margin: 0 auto; box-sizing: border-box;}
-	.pofol_inner > h1{padding-top: 50px; font-family: 'Noto Sans KR Black'; font-size: 55px; letter-spacing: -1px;
+	#portfolio {width: 100%; padding-top: 70px; padding-bottom: 200px;}
+	.pofol_inner {position: relative; width: 1100px; margin: 0 auto; box-sizing: border-box;}
+	.pofol_inner > h1 {padding-top: 50px; font-family: 'Noto Sans KR Black'; font-size: 55px; letter-spacing: -1px;
 		text-align: center;}
 	.pofol_inner > ul {overflow: hidden; margin-top: 50px;}
 	.pofol_inner > ul > li {float: left; width: 326px; height: 312px; margin-left: 40px; margin-top: 40px; box-sizing: border-box; overflow: hidden;
-        border-radius: 15px; box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);}
+        box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);}
 	.pofol_inner > ul > li:nth-child(1), .pofol_inner > ul > li:nth-child(4) {margin-left: 2px;}
 	.pofol_inner > ul > li > div > a > div{overflow: hidden;}
 	.pofol_inner > ul > li > div > a > div > img{transform: scale(1.0, 1.0); transition-duration: 0.3s;}
@@ -189,10 +189,11 @@ body{width: 100%; background: linear-gradient(137deg, #F8E0E6, #ECE0F8, #E0F2F7,
 
 	.pofol_inner > h1{padding-top: 60px; font-family: 'Noto Sans KR Black'; font-size: 55px; letter-spacing: 1px; text-align: center;}
 	.pofol_inner > ul{overflow: hidden;}
-	.pofol_inner > ul > li{float: left; width: 30.7%; margin-left: 3.7%; margin-top: 40px;}
+	.pofol_inner > ul > li {float: left; width: 30.7%; margin-left: 3.7%; box-sizing: border-box; margin-top: 40px;
+		box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);}
 	.pofol_inner > ul > li > div > a > div > img{width: 100%;}
 	.pofol_inner > ul > li:nth-child(1), .pofol_inner > ul > li:nth-child(4){margin-left: 0;}
-	.pofol_txt{padding: 12px 20px; background: #ccc;}
+	.pofol_txt{padding: 12px 20px; background: #fff; text-align: center; border-top: 1px solid #999; box-sizing: border-box;}
 	.pofol_txt > p{font-weight: 500;}
 	.pofol_txt > span{
 		font-size: 13px;
@@ -207,7 +208,7 @@ body{width: 100%; background: linear-gradient(137deg, #F8E0E6, #ECE0F8, #E0F2F7,
 	.pofol_inner > ul > li {float: left; width: 48%; margin-right: 2%; margin-top: 10px;}
 	.pofol_inner > ul > li > div > a > div > img {width: 100%;}
 	.pofol_inner > ul > li:nth-child(2), .pofol_inner > ul > li:nth-child(4), .pofol_inner > ul > li:nth-child(6) {margin-right: 0;}
-	.pofol_txt {padding: 5px 10px; background: #fff;}
+	.pofol_txt {padding: 5px 10px; background: #fff; text-align: center; border-top: 1px solid #999; box-sizing: border-box;}
 	.pofol_txt > p {font-weight: 500;}
 	.pofol_txt > span {font-size: 13px;}
 }
